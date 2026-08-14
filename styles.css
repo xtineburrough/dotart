@@ -9,6 +9,8 @@
     --text: #181818;
     --muted: #707070;
     --border: rgba(0, 0, 0, 0.08);
+    --navbar-height: 4.75rem;
+    --carousel-top-offset: clamp(1.25rem, 2.5vh, 2.5rem);
 
     --transition: 0.35s ease;
 }
@@ -55,6 +57,7 @@ a:hover {
     background: rgba(245, 242, 236, 0.92) !important;
     backdrop-filter: blur(20px);
     transition: var(--transition);
+    min-height: var(--navbar-height);
 }
 
 .navbar-brand {
@@ -240,6 +243,36 @@ p {
 }
 
 /* =====================================
+   Carousel
+===================================== */
+
+#heroCarousel {
+    margin-top: calc(var(--navbar-height) + var(--carousel-top-offset));
+    padding-top: 0;
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.captions {
+    color:rgba(255, 255, 200, 1);
+    background-color:rgba(0, 0, 0, 0.8)
+}
+.carousel-item img {
+    display: block;
+    max-width: 1900px;
+    width: 100%;
+    height: calc(100vh - var(--navbar-height) - 2.5rem);
+    min-height: 18rem;
+    object-fit: contain;
+    object-position: center top;
+}
+
+.carousel-item {
+    vertical-align: top;
+}
+/* =====================================
    Footer
 ===================================== */
 
@@ -293,6 +326,10 @@ footer {
 ===================================== */
 
 @media (max-width: 992px) {
+    :root {
+        --navbar-height: 4rem;
+        --carousel-top-offset: clamp(0.75rem, 1.5vh, 1.5rem);
+    }
 
     .hero-title {
         font-size: 2rem;
@@ -314,6 +351,10 @@ footer {
 ===================================== */
 
 @media (max-width: 768px) {
+    :root {
+        --navbar-height: 3.5rem;
+        --carousel-top-offset: clamp(0.5rem, 1vh, 1rem);
+    }
 
     .hero-title {
         font-size: 1.5rem;
@@ -325,6 +366,11 @@ footer {
 
     h3 {
         font-size: 1rem;
+    }
+
+    .carousel-item img {
+        height: calc(100vh - var(--navbar-height) - 1.25rem);
+        min-height: 14rem;
     }
 
     .footer-content {
