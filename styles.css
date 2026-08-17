@@ -245,6 +245,11 @@ p {
     background: #111;
 }
 
+#portfolio-description {
+    font-size: 1.15rem;
+    max-width: 700px;
+
+}
 /* =====================================
    Carousel
 ===================================== */
@@ -347,6 +352,11 @@ footer {
         align-items: flex-start;
         gap: 0.4rem;
     }
+     #portfolio-description {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0;
+    }
 }
 
 /* =====================================
@@ -371,9 +381,10 @@ footer {
         font-size: 1rem;
     }
 
-    .carousel-item img {
+    .carousel-item, .carousel-item img {
+        margin-top: calc(var(--navbar-height) * .5);
         height: calc(100vh - var(--navbar-height) - 1.25rem);
-        min-height: 14rem;
+        min-height: 10rem;
     }
 
     .footer-content {
@@ -384,5 +395,10 @@ footer {
 
     .navbar-brand {
         font-size: 1.5rem;
+    }
+    #portfolio-description {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0;
     }
 }
