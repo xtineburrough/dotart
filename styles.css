@@ -382,7 +382,7 @@ footer {
     }
 
     .carousel-item, .carousel-item img {
-        margin-top: calc(var(--navbar-height) * .5);
+        margin-top: calc(var(--navbar-height) * .8);
         height: calc(100vh - var(--navbar-height) - 1.25rem);
         min-height: 10rem;
     }
