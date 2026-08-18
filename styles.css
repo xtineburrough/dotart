@@ -313,6 +313,10 @@ footer {
 .text-secondary {
     color: var(--muted) !important;
 }
+mark {
+    background-color: white;
+    color: black;
+}
 
 /* =====================================
    Large Screens
