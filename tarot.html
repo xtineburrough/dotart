@@ -16,6 +16,16 @@
     .card-body p {
       margin: 0 1.5rem 0 2.25rem;
     }
+    /* .carousel-control-next,
+.carousel-control-prev , .carousel-indicators {
+    filter: invert(100%);
+} */
+mark {
+  position: absolute;
+  right: 8rem;
+  top: -6rem;
+  background-color: inherit;
+}
   </style>
 </head>
 
@@ -44,107 +54,95 @@
       </div>
     </div>
   </nav>
-  <!-- HERO SECTION-->
-  <section class="hero">
-    <img src="images/tarot-cards-hero.jpg" alt="Featured Artwork" class="hero-image" />
+       <div id="heroCarousel" class="carousel carousel-dark slide">
+        <div class="carousel-indicators" data-bs-theme="dark">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+  </div>
+  <div class="carousel-inner">
+    <!-- Slide 1: Active Hero Image -->
+    <div class="carousel-item active">
+      <img src="images/tarot-cards-hero.jpg" class="d-block w-100" alt="First slide">
 
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <!-- <p class="hero-kicker">Artist x Educator x Author</p> -->
-
-      <h1 class="hero-title px-5">Hindsight is 20/20: Tarot Cards for Working Women in a Global Pandemic</h1>
-      <h2>In collaboration with Allison Jauregi</h2>
+      <!-- <div class="carousel-caption d-none d-md-block"><mark>May19582026 (After Vivian Maier)</mark>
+      </div> USED to look like this with d-none and d-md-block- in the carousel caption class setting the 
+      display to none for everything except for medium viewports, in which case
+      it was set to block. I removed them throughout so the captions display everywhere-->
+      <div class="carousel-caption">
+        <mark>Hindsight is 20/20: 
+          <br>Tarot Cards for Working Women
+          <br>in a Global Pandemic
+          <br>(children not included)</mark>
+      </div>
     </div>
-  </section>
-
-  <!--CARDS/portfolio SECTION-->
-  <section id="portfolio" class="container py-5">
-    <div class="row g-5">
-      <div class="col-md-6"> <!--EACH COL HAS 2 DIVS IN IT SO 3 CLOSINGS AT END-->
-        <div class="card">
-          <img src="images/tarot-theLovers.png" class="card-img-top img-fluid"
-            alt="copper plate">
-          <div class="card-body">
-            <p class="card-text">&ldquo;The Lovers&rdquo;
-              <br><em>Hindsight is 20/20</em> made in collaboration with Allison Jauregi, 2021.
-             <br> <small>16 by 24 inches, copper plates</small></p>
-          </div>
-        </div>
+     <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="images/tarot-theLovers.png" class="d-block w-100" alt="Second slide">
+      <div class="carousel-caption"><mark>The Lovers</mark>
       </div>
-
-      <div class="col-md-6"> <!--EACH COL HAS 2 DIVS IN IT SO 3 CLOSINGS AT END-->
-        <div class="card">
-          <img src="images/tarot-theMagician.png" class="card-img-top img-fluid"
-            alt="copper plate">
-          <div class="card-body">
-            <p class="card-text">&ldquo;The Magician&rdquo;
-              <br><em>Hindsight is 20/20</em> made in collaboration with Allison Jauregi, 2021.
-             <br> <small>16 by 24 inches, copper plates</small></p>
-          </div>
-        </div>
+    </div>
+  <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="images/tarot-theMagician.png" class="d-block w-100" alt="Second slide">
+      <div class="carousel-caption"><mark>The Magician</mark>
       </div>
-
-       <div class="col-md-6"> <!--EACH COL HAS 2 DIVS IN IT SO 3 CLOSINGS AT END-->
-        <div class="card">
-          <img src="images/tarot-theMoon.png" class="card-img-top img-fluid"
-            alt="copper plate">
-          <div class="card-body">
-            <p class="card-text">&ldquo;The Moon&rdquo;
-              <br><em>Hindsight is 20/20</em> made in collaboration with Allison Jauregi, 2021.
-             <br> <small>16 by 24 inches, copper plates</small></p>
-          </div>
-        </div>
+    </div>
+  <!-- Slide 4 -->
+    <div class="carousel-item">
+      <img src="images/tarot-theHermit.png" class="d-block w-100" alt="Second slide">
+      <div class="carousel-caption"><mark>The Hermit</mark>
       </div>
-
-     <div class="col-md-6"> <!--EACH COL HAS 2 DIVS IN IT SO 3 CLOSINGS AT END-->
-        <div class="card">
-          <img src="images/tarot-theSun.png" class="card-img-top img-fluid"
-            alt="copper plate">
-          <div class="card-body">
-            <p class="card-text">&ldquo;The Sun&rdquo;
-              <br><em>Hindsight is 20/20</em> made in collaboration with Allison Jauregi, 2021.
-             <br> <small>16 by 24 inches, copper plates</small></p>
-          </div>
-        </div>
+    </div>
+    <!-- Slide 5 -->
+    <div class="carousel-item">
+      <img src="images/tarot-temperance.png" class="d-block w-100" alt="Second slide">
+      <div class="carousel-caption"><mark>Temperance</mark>
       </div>
-
-       <div class="col-md-6"> <!--EACH COL HAS 2 DIVS IN IT SO 3 CLOSINGS AT END-->
-        <div class="card">
-          <img src="images/tarot-theStar.png" class="card-img-top img-fluid"
-            alt="copper plate">
-          <div class="card-body">
-            <p class="card-text">&ldquo;The Star&rdquo;
-              <br><em>Hindsight is 20/20</em> made in collaboration with Allison Jauregi, 2021.
-             <br> <small>16 by 24 inches, copper plates</small></p>
-          </div>
-        </div>
+    </div>
+   <!-- Slide 6 -->
+    <div class="carousel-item">
+      <img src="images/tarot-theMoon.png" class="d-block w-100" alt="Second slide">
+      <div class="carousel-caption"><mark>The Moon</mark>
       </div>
-
-       <div class="col-md-6"> <!--EACH COL HAS 2 DIVS IN IT SO 3 CLOSINGS AT END-->
-        <div class="card">
-          <img src="images/tarot-temperance.png" class="card-img-top img-fluid"
-            alt="copper plate">
-          <div class="card-body">
-            <p class="card-text">&ldquo;Temperance&rdquo;
-              <br><em>Hindsight is 20/20</em> made in collaboration with Allison Jauregi, 2021.
-             <br> <small>16 by 24 inches, copper plates</small></p>
-          </div>
-        </div>
+    </div>
+   <!-- Slide 7 -->
+    <div class="carousel-item">
+      <img src="images/tarot-theSun.png" class="d-block w-100" alt="Second slide">
+      <div class="carousel-caption"><mark>The Sun</mark>
       </div>
-
-       <div class="col-md-6"> <!--EACH COL HAS 2 DIVS IN IT SO 3 CLOSINGS AT END-->
-        <div class="card">
-          <img src="images/tarot-theTower.png" class="card-img-top img-fluid"
-            alt="copper plate">
-          <div class="card-body">
-            <p class="card-text">&ldquo;The Tower&rdquo;
-              <br><em>Hindsight is 20/20</em> made in collaboration with Allison Jauregi, 2021.
-             <br> <small>16 by 24 inches, copper plates</small></p>
-          </div>
-        </div>
+    </div>
+  
+ <!-- Slide 8 -->
+    <div class="carousel-item">
+      <img src="images/tarot-theStar.png" class="d-block w-100" alt="Second slide">
+      <div class="carousel-caption"><mark>The Star</mark>
       </div>
+    </div>
 
-     
+   <!-- Slide 9 -->
+    <div class="carousel-item">
+      <img src="images/tarot-theTower.png" class="d-block w-100" alt="Second slide">
+      <div class="carousel-caption"><mark>The Tower</mark>
+      </div>
+    </div>
+
+</div>
+  <!-- Optional Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
       <section id="about" class="container p-5">
         <h2>Hindsight is 20/20: Tarot Cards for Working Women in a Global Pandemic</h2>
         <h3>Made in Collaboration with Allison Jauregi, 2021</h3>
@@ -159,9 +157,7 @@
           <p>
           One set of playing cards is held in the Special Collections Library at NYU&apos;s Elmer Holmes Bobst Library following burrough&apos;s exhibition, <em>Ceremonial Techne</em> (2021).
           This work was made in the Machine Shop at UT Dallas in Richardson, Texas with assistance from Machinist Andrew Bittner. See more images on burrough&apos;s <a href = "http://missconceptions.net/tarot/">project page.</a>
-          </p>
-
-      
+          </p>     
 
       </section>
       <footer id="contact" class="container py-5 border-top">
@@ -169,6 +165,112 @@
       <p><a href = "https://www.instagram.com/@xtineburrough" title="instagram" style="border-bottom: 1px solid #3399FF;">@xtineburrough</a></p>
     </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+
+<!-- This page used to be laid out with cards -- HERO SECTION CARDS --
+  <section class="hero">
+    <img src="images/tarot-cards-hero.jpg" alt="Featured Artwork" class="hero-image" />
+
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <!-- <p class="hero-kicker">Artist x Educator x Author</p> -->
+<!--
+      <h1 class="hero-title px-5">Hindsight is 20/20: Tarot Cards for Working Women in a Global Pandemic</h1>
+      <h2>In collaboration with Allison Jauregi</h2>
+    </div>
+  </section>
+  -->
+
+  <!--CARDS/portfolio SECTION-->
+  <!--
+  <section id="portfolio" class="container py-5">
+    <div class="row g-5">
+      <div class="col-md-6"> <!--EACH COL HAS 2 DIVS IN IT SO 3 CLOSINGS AT END-->
+        <!--
+        <div class="card">
+          <img src="images/tarot-theLovers.png" class="card-img-top img-fluid"
+            alt="copper plate">
+          <div class="card-body">
+            <p class="card-text">&ldquo;The Lovers&rdquo;
+              <br><em>Hindsight is 20/20</em> made in collaboration with Allison Jauregi, 2021.
+             <br> <small>16 by 24 inches, copper plates</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6"> 
+        <div class="card">
+          <img src="images/tarot-theMagician.png" class="card-img-top img-fluid"
+            alt="copper plate">
+          <div class="card-body">
+            <p class="card-text">&ldquo;The Magician&rdquo;
+              <br><em>Hindsight is 20/20</em> made in collaboration with Allison Jauregi, 2021.
+             <br> <small>16 by 24 inches, copper plates</small></p>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-md-6"> 
+        <div class="card">
+          <img src="images/tarot-theMoon.png" class="card-img-top img-fluid"
+            alt="copper plate">
+          <div class="card-body">
+            <p class="card-text">&ldquo;The Moon&rdquo;
+              <br><em>Hindsight is 20/20</em> made in collaboration with Allison Jauregi, 2021.
+             <br> <small>16 by 24 inches, copper plates</small></p>
+          </div>
+        </div>
+      </div>
+
+     <div class="col-md-6"> 
+        <div class="card">
+          <img src="images/tarot-theSun.png" class="card-img-top img-fluid"
+            alt="copper plate">
+          <div class="card-body">
+            <p class="card-text">&ldquo;The Sun&rdquo;
+              <br><em>Hindsight is 20/20</em> made in collaboration with Allison Jauregi, 2021.
+             <br> <small>16 by 24 inches, copper plates</small></p>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-md-6"> 
+        <div class="card">
+          <img src="images/tarot-theStar.png" class="card-img-top img-fluid"
+            alt="copper plate">
+          <div class="card-body">
+            <p class="card-text">&ldquo;The Star&rdquo;
+              <br><em>Hindsight is 20/20</em> made in collaboration with Allison Jauregi, 2021.
+             <br> <small>16 by 24 inches, copper plates</small></p>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-md-6"> 
+        <div class="card">
+          <img src="images/tarot-temperance.png" class="card-img-top img-fluid"
+            alt="copper plate">
+          <div class="card-body">
+            <p class="card-text">&ldquo;Temperance&rdquo;
+              <br><em>Hindsight is 20/20</em> made in collaboration with Allison Jauregi, 2021.
+             <br> <small>16 by 24 inches, copper plates</small></p>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-md-6"> 
+        <div class="card">
+          <img src="images/tarot-theTower.png" class="card-img-top img-fluid"
+            alt="copper plate">
+          <div class="card-body">
+            <p class="card-text">&ldquo;The Tower&rdquo;
+              <br><em>Hindsight is 20/20</em> made in collaboration with Allison Jauregi, 2021.
+             <br> <small>16 by 24 inches, copper plates</small></p>
+          </div>
+        </div>
+      </div>
+      -->
+
+
+    </body>
 
 </html>
