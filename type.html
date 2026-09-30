@@ -12,12 +12,23 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+   <style>
+    a:link, a:active {
+      border-bottom: 1px solid #3399FF;
+    }
+     a:hover, a:visited {
+      border-bottom: 1px solid #000000;
+    }
+    nav a:link, a:active, a:hover, a:visited {
+      border-bottom: 0 solid #020202 !important;
+    }
+  </style>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">xtine burrough</a> >Cyanotype Prints
+      <a class="navbar-brand" href="index.html"">xtine burrough</a> >Type in Action
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -54,39 +65,57 @@
   <!--CARDS/portfolio SECTION-->
   <section id="portfolio" class="container py-5">
     <div class="row g-5">
-      <div class="col-md-6"> <!--EACH COL HAS 2 DIVS IN IT SO 3 CLOSINGS AT END-->
+      <div class="col-md-4"> <!--EACH COL HAS 2 DIVS IN IT SO 3 CLOSINGS AT END-->
         <div class="card">
-          <img src="images/cyan-eggOnYourFace-lg.jpg" class="card-img-top img-fluid"
+          <img src="images/immortal-fiber.gif" class="card-img-top img-fluid"
+            alt="laser cut paper towels">
+          <div class="card-body">
+            <p class="card-text"><em>Immortal Fiber</em>
+              <br>Laser-cut paper towels created for LabSynthE&apos;s solo exhibition, <a
+                href="https://ulrich.wichita.edu/ulrich_exhibition/word-thread-and-the-magnolia/" target="_blank">Word, Thread, and
+                the Magnolia</a>
+                <br>East Flushing Gallery at the Ulrich Museum of Art (Witchita, KS) 2024
+                </p>
+            <p>
+              <small>Magnolia Threads is a custom typeface I created, inspired by the shape of buds that drop from Magnolia
+                trees.</em></small>
+            </p>
+            </div>
+            </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/witchesweed.gif" class="card-img-top img-fluid"
             alt="cyanotype print digital negatives">
           <div class="card-body">
-            <p class="card-text">&ldquo;Egg On Your Face&rdquo; from <em>The Library of Congress, Remixed </em>series,
-              2012.<br> <small>12 by 9 inches on water color paper</small></p>
+            <p class="card-text">
+              <a href="http://www.missconceptions.net/witchesWeed/index.html" target="_blank">Witches&apos; Weed</a> is a custom
+              typeface inspired by moon flowers (Datura Genus, also known as witches&apos; weed).<br>
+              <small>
+                Witches&apos; Weed is featured in the Fall 2024 electronic literature journal of praxis <a
+                  href="https://taper.badquar.to/13/witches_weed.html" target="_blank"> Taper #13 Superstitions.</a>
+              </small>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="card">
-          <img src="images/cyan-aNewLeaseOnLife-lg.jpg" class="card-img-top img-fluid"
-            alt="cyanotype print digital negatives">
+          <img src="images/halfHaveHalfDont.jpg" class="card-img-top img-fluid"
+            alt="paper scroll featuring custom tyepface made with penny rubbings">
           <div class="card-body">
-            <p class="card-text">&ldquo;A New Lease On Life&rdquo; from <em>The Library of Congress, Remixed
-              </em>series, 2012. <br> <small>12 by 9 inches on water color paper</small></p>
+            <p class="card-text">
+              Paper wall hanging made with penny rubbings. Abe is a custom typeface made during my time with NEW INC.
+              </p>
+              <small>
+                This poem was written by Anne Bray for <em>Paying It Forward</em>, my one-cent commissions on Venmo, featured at <a href = "https://rhizome.org/editorial/2023/oct/11/works-from-the-2022-23-art-code-cohort/" target="_blank" class="darklink">Dunkunsthalle for DEMO DAYS 2023.</a>
+              </small>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6">
-        <div class="card">
-          <img src="images/cyan-theSkysTheLimit-lg.jpg" class="card-img-top img-fluid"
-            alt="cyanotype print digital negatives">
-          <div class="card-body">
-            <p class="card-text">&ldquo;The Sky&apos;s the Limit&rdquo; from <em>The Library of Congress, Remixed
-              </em>series, 2012. <br> <small>12 by 9 inches on water color paper</small></p>
-          </div>
-        </div>
-      </div>
-
+      <!-- add a lazaret cave video here and above you should add the paper towels complict along with its video 
       <div class="col-md-6">
         <div class="card">
           <img src="images/cyan-highAndDry-lg.jpg" class="card-img-top img-fluid"
@@ -108,40 +137,9 @@
           </div>
         </div>
       </div>
-
-      <div class="col-md-6">
-        <div class="card">
-          <img src="images/cyan-moneyToBurn-lg.jpg" class="card-img-top img-fluid"
-            alt="cyanotype print digital negatives">
-          <div class="card-body">
-            <p class="card-text">&ldquo;Money To Burn&rdquo; from <em>The Library of Congress, Remixed </em>series,
-              2012. <br> <small>12 by 9 inches on water color paper</small></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card">
-          <img src="images/cyan-aLittleBirdieToldMe-lg.jpg" class="card-img-top img-fluid"
-            alt="cyanotype print digital negatives">
-          <div class="card-body">
-            <p class="card-text">&ldquo;A Little Birdie Told Me&rdquo; from <em>The Library of Congress, Remixed
-              </em>series, 2012. <br> <small>9 by 12 inches on water color paper</small></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card">
-          <img src="images/cyan-foodForThought-lg.jpg" class="card-img-top img-fluid"
-            alt="cyanotype print digital negatives">
-          <div class="card-body">
-            <p class="card-text">&ldquo;Food for Thought&rdquo; from <em>The Library of Congress, Remixed </em>series,
-              2012. <br> <small>9 by 12 inches on water color paper</small></p>
-          </div>
-        </div>
-      </div>
-
+    -->
+    
+<!--
       <section id="about" class="container p-5">
         <h2>Cyanotypes</h2>
         <p>
@@ -163,6 +161,7 @@
         </p>
 
       </section>
+      -->
       <footer id="contact" class="container py-5 border-top">
       <p>xtineburrough[at]gmail[dot]com</p>
       <p><a href = "https://www.instagram.com/@xtineburrough" title="instagram" style="border-bottom: 1px solid #3399FF;">@xtineburrough</a></p>
